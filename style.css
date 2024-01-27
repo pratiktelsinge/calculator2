@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(245, 227, 212);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*===============================
+   Calculator Structure 
+   =============*/
+
+#calc {
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    background: #d15e5e;
+    box-shadow: inset -5px 5px 4px #bb9f9f, inset 5px -5px 4px #fed9d9;
+}
+
+#calc-display {
+    margin-bottom: 20px;
+    background: #c1d1d3;
+    box-shadow: inset -5px 5px 4px #abc4c8, inset 5px -5px 4px #d9fafe;
+    height: 35px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #1d282b;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+}
+
+.keys {
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background: linear-gradient(25deg, #525a65, #3b424c);
+  color: rgba(255, 255, 255, .8);
+  box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    4px 1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -3px 1px 0 rgba(0, 0, 0, .5),
+    4px -3px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.key2 {
+    position: relative;
+    top: -30px;
+    left: -8px;
+}
+
+.key3 {
+    position: relative;
+    top: -60px;
+    left: -40px;
+}
+
+.keys:active {
+   
+    border: none;
+    box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    3px 1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 1px 0 rgba(0, 0, 0, .5),
+    3px -1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 5px 0 rgba(0, 0, 0, .5),
+    4px 0 1px 0 rgba(255, 255, 255, .3);
+  transform: translate(1px, -1px);
+}
+
+.bottom {
+    position: relative;
+    left: -2px;
+}
+
+#equals {
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 135px;
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background: linear-gradient(25deg, #525a65, #3b424c);
+  color: rgba(255, 255, 255, .8);
+  box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    4px 1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -3px 1px 0 rgba(0, 0, 0, .5),
+    4px -3px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 5px 0 rgba(0, 0, 0, .5);
+}
+
+#equals:active {
+    border: none;
+    box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, .2),
+    inset -3px 2px 5px 0 rgba(0, 0, 0, .2),
+    3px 1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 1px 0 rgba(0, 0, 0, .5),
+    3px -1px 1px 0 rgba(0, 0, 0, .5),
+    -1px -1px 5px 0 rgba(0, 0, 0, .5),
+    4px 0 1px 0 rgba(255, 255, 255, .3);
+  transform: translate(1px, -1px);
+}
+
+.set {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+div>h3 {
+    color: #aaa;
+    opacity: 0.56;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 1px 4px #111;
+}
+
+.spacer {
+    padding: 50px;
+}
